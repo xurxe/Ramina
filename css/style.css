@@ -1,0 +1,145 @@
+/* GENERAL ****************************************************************** */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+
+
+/* TYPOGRAPHY *************************************************************** */
+
+html {
+    color: white;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    font-family: 'library_3_am_softregular', sans-serif;
+    font-size: 2.8rem;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    html {
+        font-size: calc(16px + (20 - 16) * (100vw - 600px) / (900 - 600));
+    }
+
+    h1 {
+        font-size: calc(40px + (56 - 40) * (100vw - 600px) / (900 - 600));
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+p {
+    line-height: 1.5rem;
+    margin-top: 3rem;
+}
+
+
+
+
+/* LAYOUT ****************************************************************** */
+
+
+body {
+    background: black;
+    display: grid;
+    grid-template-areas:
+    "header slideshow"
+    "main slideshow"
+    "footer slideshow";
+    min-height: 100vh;
+}
+
+.slideshow {
+    background: rgb(61, 61, 61);
+    grid-area: slideshow;
+    width: 15rem;
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        grid-template-areas:
+        "header"
+        "main"
+        "slideshow"
+        "footer";
+    }
+
+    .slideshow {
+        height: 15rem;
+        margin-top: 3rem;
+        width: 100vw;
+    }
+}
+
+header, main, footer {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 3rem; 
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    header, main, footer {
+        margin-left: calc(32px + (100 - 32) * (100vw - 600px) / (900 - 600));
+        margin-right: calc(48px + (100 - 48) * (100vw - 600px) / (900 - 600));
+        margin-top: calc(32px + (60 - 32) * (100vw - 600px) / (900 - 600));
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header, main, footer {
+        margin-left: 2rem;
+        margin-right: 3rem;
+        margin-top: 2rem; 
+    }
+}
+
+footer a {
+    color: grey;
+    display: block;
+    font-size: 0.8rem;
+    transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+}
+
+footer a:hover {
+    color: white;
+    transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+}
