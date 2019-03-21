@@ -26,6 +26,8 @@ html {
 h1 {
     font-family: 'library_3_am_softregular', sans-serif;
     font-size: 2.8rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
 }
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
@@ -35,6 +37,7 @@ h1 {
 
     h1 {
         font-size: calc(40px + (56 - 40) * (100vw - 600px) / (900 - 600));
+        margin-top: calc(32px + (100 - 32) * (100vw - 600px) / (900 - 600));
     }
 }
 
@@ -45,6 +48,7 @@ h1 {
 
     h1 {
         font-size: 2.5rem;
+        margin-top: 2rem;
     }
 }
 
@@ -58,56 +62,48 @@ p {
 
 /* LAYOUT ****************************************************************** */
 
-
 body {
     background: black;
-    display: grid;
-    grid-template-areas:
-    "header slideshow"
-    "main slideshow"
-    "footer slideshow";
     min-height: 100vh;
+    padding-right: 15rem;
 }
 
 .slideshow {
-    background: rgb(61, 61, 61);
-    grid-area: slideshow;
     width: 15rem;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+img {
+    width: 100%;
+    position: relative;
 }
 
 @media only screen and (max-width: 700px) {
     body {
-        grid-template-areas:
-        "header"
-        "main"
-        "slideshow"
-        "footer";
+        padding-right: 0;
     }
 
     .slideshow {
-        height: 15rem;
+        height: 25rem;
         margin-top: 3rem;
         width: 100vw;
+        padding-right: 0;
+        position: initial;
+    }
+
+    img {
+        min-height: 100%;
     }
 }
 
 header, main, footer {
     margin-left: 5rem;
     margin-right: 5rem;
-    margin-top: 3rem; 
-}
-
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-    margin-bottom: 3rem;
+    margin-bottom: 3rem; 
 }
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
