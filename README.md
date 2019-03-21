@@ -1,6 +1,6 @@
 # Title
 
-Website commissioned by visual artist Ramina Habibollah.
+Website commissioned by multidisciplinary artist Ramina Habibollah.
 
 ## Demo
 
@@ -16,4 +16,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-Thanks to Ramina for entrusting me with her art.
+Thanks to Ramina for entrusting me with her virtual home.

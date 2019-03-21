@@ -24,8 +24,9 @@ html {
 }
 
 h1 {
-    font-family: 'library_3_am_softregular', sans-serif;
-    font-size: 2.8rem;
+    font-family: 'Flamenco', sans-serif;
+    font-weight: normal;
+    font-size: 3.5rem;
     margin-top: 5rem;
     margin-bottom: 3rem;
 }
@@ -36,7 +37,7 @@ h1 {
     }
 
     h1 {
-        font-size: calc(40px + (56 - 40) * (100vw - 600px) / (900 - 600));
+        font-size: calc(40px + (70 - 40) * (100vw - 600px) / (900 - 600));
         margin-top: calc(32px + (100 - 32) * (100vw - 600px) / (900 - 600));
     }
 }
@@ -57,6 +58,29 @@ p {
     margin-top: 3rem;
 }
 
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+a {
+    color: white;
+    transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+}
+
+a:hover {
+    color: grey;
+    transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+}
 
 
 
@@ -65,24 +89,23 @@ p {
 body {
     background: black;
     min-height: 100vh;
-    padding-right: 15rem;
+    padding-right: 20rem;
 }
 
 .slideshow {
     font-size: 0;
     height: 100vh;
     overflow: hidden;
-    padding-right: 1rem;
+    padding-right: 3rem;
     position: fixed;
     right: 0;
     top: 0;
-    width: 15rem;
+    width: 20rem;
 }
 
 img {
-    background: black;
     position: relative;
-    padding-bottom: 1rem;
+    padding-bottom: 6rem;
     width: 100%;
 }
 
