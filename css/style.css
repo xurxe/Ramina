@@ -69,17 +69,21 @@ body {
 }
 
 .slideshow {
-    width: 15rem;
-    overflow: hidden;
+    font-size: 0;
     height: 100vh;
+    overflow: hidden;
+    padding-right: 1rem;
     position: fixed;
     right: 0;
     top: 0;
+    width: 15rem;
 }
 
 img {
-    width: 100%;
+    background: black;
     position: relative;
+    padding-bottom: 1rem;
+    width: 100%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -126,6 +130,7 @@ footer a {
     color: grey;
     display: block;
     font-size: 0.8rem;
+    padding-bottom: 2rem;
     transition: color 0.5s ease;
     -moz-transition: color 0.5s ease;
     -o-transition: color 0.5s ease;
