@@ -97,6 +97,10 @@ header, main, footer {
     margin-bottom: 3rem; 
 }
 
+footer {
+    margin-top: 6rem;
+}
+
 @media only screen and (min-width: 600px) and (max-width: 900px) {
     header, main, footer {
         margin-left: calc(32px + (180 - 32) * (100vw - 600px) / (900 - 600));
