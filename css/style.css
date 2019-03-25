@@ -89,60 +89,19 @@ a:hover {
 body {
     background: black;
     min-height: 100vh;
-    padding-right: 20rem;
-}
-
-.slideshow {
-    font-size: 0;
-    height: 100vh;
-    overflow: hidden;
-    padding-right: 3rem;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 20rem;
-}
-
-img {
-    position: relative;
-    padding-bottom: 6rem;
-    width: 100%;
-}
-
-@media only screen and (max-width: 900px) {
-    body {
-        padding-right: 0;
-    }
-
-    .slideshow {
-        display: flex;
-        flex-direction: row-reverse;
-        height: 50vh;
-        margin-top: 3rem;
-        width: 100vw;
-        padding-right: 0;
-        position: initial;
-    }
-
-    img {
-        height: 100%;
-        padding-bottom: 0rem;
-        padding-left: 6rem;
-        width: auto;
-    }
 }
 
 header, main, footer {
-    margin-left: 5rem;
-    margin-right: 3rem;
+    margin-left: 9rem;
+    margin-right: 9rem;
     margin-bottom: 3rem; 
 }
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
     header, main, footer {
-        margin-left: calc(32px + (100 - 32) * (100vw - 600px) / (900 - 600));
-        margin-right: calc(48px + (60 - 48) * (100vw - 600px) / (900 - 600));
-        margin-top: calc(32px + (60 - 32) * (100vw - 600px) / (900 - 600));
+        margin-left: calc(32px + (180 - 32) * (100vw - 600px) / (900 - 600));
+        margin-right: calc(48px + (180 - 48) * (100vw - 600px) / (900 - 600));
+        margin-bottom: calc(32px + (60 - 32) * (100vw - 600px) / (900 - 600));
     }
 }
 
@@ -150,7 +109,7 @@ header, main, footer {
     header, main, footer {
         margin-left: 2rem;
         margin-right: 3rem;
-        margin-top: 2rem; 
+        margin-bottom: 2rem; 
     }
 }
 
