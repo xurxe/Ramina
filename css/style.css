@@ -14,17 +14,12 @@
 /* TYPOGRAPHY *************************************************************** */
 
 html {
-    color: white;
+    color: hsla(0, 0%, 0%, 0.85);
     font-size: 20px;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-    font-family: 'Flamenco', sans-serif;
+    font-family: 'IBM Plex Serif', serif;
     font-weight: normal;
     font-size: 3.5rem;
     margin-top: 5rem;
@@ -67,7 +62,7 @@ p {
 }
 
 a {
-    color: white;
+    color: hsla(0, 0%, 0%, 0.5);
     transition: color 0.5s ease;
     -moz-transition: color 0.5s ease;
     -o-transition: color 0.5s ease;
@@ -75,7 +70,7 @@ a {
 }
 
 a:hover {
-    color: grey;
+    color: hsla(0, 0%, 0%, 0.9);
     transition: color 0.5s ease;
     -moz-transition: color 0.5s ease;
     -o-transition: color 0.5s ease;
@@ -87,7 +82,7 @@ a:hover {
 /* LAYOUT ****************************************************************** */
 
 body {
-    background: black;
+    background: white;
     min-height: 100vh;
 }
 
@@ -118,20 +113,7 @@ footer {
 }
 
 footer a {
-    color: grey;
     display: block;
     font-size: 0.8rem;
     padding-bottom: 2rem;
-    transition: color 0.5s ease;
-    -moz-transition: color 0.5s ease;
-    -o-transition: color 0.5s ease;
-    -webkit-transition: color 0.5s ease;
-}
-
-footer a:hover {
-    color: white;
-    transition: color 0.5s ease;
-    -moz-transition: color 0.5s ease;
-    -o-transition: color 0.5s ease;
-    -webkit-transition: color 0.5s ease;
 }
